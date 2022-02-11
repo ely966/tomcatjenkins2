@@ -1,0 +1,102 @@
+body{
+    height: 100%;
+	background: url("/styles/fondo1.jpg");
+	background-size: cover;
+	 background-attachment: fixed;
+    background-repeat: no-repeat;
+	margin: 30px;
+
+}
+
+.formulario{
+	background: linear-gradient(to right, #00bfff, white);
+	border-radius: 10px;
+	box-shadow: 0 0 8px 8px white inset;
+	text-align:center;
+	 height: 300px;
+	 
+}
+.formularioLista{
+	background: linear-gradient(to right, #00bfff, white);
+	border-radius: 10px;
+	box-shadow: 0 0 8px 8px white inset;
+	text-align:center;
+	 height: 400px;
+	 
+}
+
+.formularioListaUser{
+	background: linear-gradient(to right, #00bfff, white);
+	border-radius: 10px;
+	box-shadow: 0 0 8px 8px white inset;
+	text-align:center;
+	 height: 450px;
+	 
+}
+
+.formularioo{
+	background: linear-gradient(to right, #00bfff, white);
+	border-radius: 10px;
+	box-shadow: 0 0 8px 8px white inset;
+	text-align:center;
+	 height: 600px;
+	 
+}
+.formularioCatalogo{
+	background: linear-gradient(to right, #00bfff, white);
+	border-radius: 10px;
+	box-shadow: 0 0 8px 8px white inset;
+	text-align:center;
+	height: 350px;
+	 
+	 
+}
+.formularioEditar{
+	background: linear-gradient(to right, #00bfff, white);
+	border-radius: 10px;
+	box-shadow: 0 0 8px 8px white inset;
+	text-align:center;
+	 height: 650px;
+	 width: 96%;
+	margin: 30px;
+	 
+}
+.formularioComprobar{
+	background: linear-gradient(to right, #00bfff, white);
+	border-radius: 10px;
+	box-shadow: 0 0 8px 8px white inset;
+	text-align:center;
+	 height: 750px;
+	 width: 96%;
+	margin: 30px;
+	 
+}
+.tablitaEditar{
+	width: 90%;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+.tablitaCatalogo{
+	width: 80%;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+.tablita{
+	width: 100%;
+	margin: 20px;
+	border-collapse: collapse;
+}
+
+.tablitaversion2{
+	width: 80%;
+	margin: 20px;
+	border-collapse: collapse;
+}
+tr:nth-child(even){background-color: #f2f2f2}
+th {
+  background-color: #96A8B3;
+  color: blue;
+  text-align: left;
+  padding: 8px;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Indice</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link type="text/css" href="/styles/css/estilo.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="formulario">
+		<h1>Welcome</h1>
+		<a th:href="@{/servicio/listarporUser}" class="btn btn-outline-primary">Listar Pedidos</a>
+		<p><a th:href="@{/servicio/mostrarCatalogo}" class="btn btn-outline-primary" role="button">Crear Pedido</a></p>
+		<p><a th:href="@{/portada}" class="btn btn-outline-secondary">Volver</a></p> 
+	</div>
+</body>
+</html> 
+   

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Indice</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link type="text/css" href="/styles/css/estilo.css" rel="stylesheet" />
+       
+    
+</head>
+<body>
+<div>
+
+	<div class="formulario">
+	<h1>Welcome</h1>
+		<form action="#" th:action="@{/usuario/comprobar}" method="get" th:object="${usuario}">
+			<p>Usuario</p>
+			<p><input type="text" th:field="*{userName}" required/></p>
+			<p>Contraseña</p>
+			<p><input type="text" th:field="*{pass}" required/></p>
+			<p><input type="submit" value="Enviar"/></p>
+		</form>
+	</div>
+ </div>   
+   
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>AddPedido</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+    <link type="text/css" href="/styles/css/estilo.css" rel="stylesheet" />
+  
+     
+</head>
+<body>
+	<div class="formularioCatalogo " >
+	<h1>Añadir pedido</h1>
+	<table class="w3-table-all w3-card-4 tablitaCatalogo ">
+		<tr>
+	   		<td>Id</td>
+	   		<td>NombreProducto</td>
+	   		<td>Precio</td>
+	   		<td>Cantidad</td>
+	   	</tr>
+	   	<form th:action="@{/pedido/add/subm}" method="post">
+	   		<tr th:each="produ : ${catalogo}">
+	   			<td>
+					<input type="hidden" th:text="${produ.id}" th.value="${produ.id}" th.name="id" th.id="id" /> 
+	   			</td>
+	   			<td>
+	   				<input type="hidden" th:text="${produ.nombre}" th.value="${produ.nombre}" th.name="nombre" th.id="nombre"/>
+	   			</td>
+	   			<td>
+	   				<input type="hidden" th:text="${produ.precio}" th.value="${produ.precio}" th.name="precio" th.id="precio"/>
+	   				  
+	   			</td>
+	   			<td>
+	   				<input type="number" value="0" name="cantidad" id="cantidad" min="0" />
+	   			</td>
+	   		</tr>
+	   		<tr>
+	   			<td></td><td></td>
+	   			<td class=" col text-center" colspan="2">
+	   				<input type="submit" value="Crear nuevo pedido"/> 
+	   				<a th:href="@{/seleccion}" class="btn btn-outline-secondary" role="button">Volver a Selección</a>
+	   				
+	   			</td>
+	   		</tr>
+	   	</form>
+	 </table>
+   	<p></p>
+   </div>
+</body>
+</html>

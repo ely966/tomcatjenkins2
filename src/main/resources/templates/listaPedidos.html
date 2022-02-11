@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Pedidos</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link type="text/css" href="/styles/css/estilo.css" rel="stylesheet" />
+</head>
+</head>
+<body>
+<div class="formularioListaUser">
+	<h1>Pedidos</h1>
+	<table class="w3-table-all w3-card-4 tablitaEditar " witdh="60%" >
+		<tr>
+			<!--<th width="25%">IdPedido</th>-->
+	    	<th width="25%">Dirección</th>
+	    	<th colspan="2" width="25%">Opciones</th>
+	    </tr> 
+	    	
+		<tr th:each="pedido : ${listaPedido}">
+	    	<!--  <td th:text="${pedido.id}"></td>-->
+	    	<td th:text="${pedido.direccion}"></td>
+	    	<td><a th:href="@{/pedido/edit/{id}(id=${pedido.id})}">Editar</a></td>
+	    	<td><a th:href="@{/pedido/deletePedido/{id}(id=${pedido.id})}">Borrar</a></td>		
+	    </tr>
+	    		
+	</table>
+    <p><a th:href="@{/seleccion}">Volver</a></p>
+</div>
+</body>
+</html>
